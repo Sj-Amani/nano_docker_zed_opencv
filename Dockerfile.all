@@ -12,7 +12,6 @@ COPY packages/usr /usr
 RUN printenv && \
     ls -ll /usr/lib/aarch64-linux-gnu/tegra && \
     ls -ll /usr/lib/aarch64-linux-gnu/libnv* && \
-    ln -s /usr/lib/aarch64-linux-gnu/libnvonnxparser.so.6 /usr/lib/aarch64-linux-gnu/libnvonnxparser.so && \
     ls -ll /usr/lib/aarch64-linux-gnu/libnv* && \
     ldd /usr/lib/aarch64-linux-gnu/libnvinfer.so 
 # After using an arg in a `FROM` line, the arg is lo
