@@ -44,4 +44,4 @@ docker build --build-arg L4T_MINOR_VERSION=${L4T_MINOR_VERSION} \
              --build-arg JETPACK_MAJOR=${JETPACK_MAJOR} \
              --build-arg JETPACK_MINOR=${JETPACK_MINOR} \
 			 --build-arg OPENCV_VERSION=${OPENCV_VERSION} \
-			 -t "${TAG}" -f Dockerilfe.all .
+			 -t "${TAG}" -f Dockerfile.all .
