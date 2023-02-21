@@ -1,6 +1,19 @@
 # nano_docker_zed_opencv
 This repo has the docker file for build an image including ZED SDK and Opencv for Jetson Nano
 
+## PART 1: Write image and install OS
+
+## PART 2: Config pc:
+Connect the ethernet cable and open a terminal:
+```
+	sudo apt update
+	sudo apt-mark hold systemd		from	--> 	[Due to an issue: Jetson Nano blank screen during and after boot] 
+								Ref: https://forums.developer.nvidia.com/t/jetson-nano-blank-screen-during-and-after-boot/160356
+	sudo apt upgrade
+	sudo reboot
+```
+
+## PART 3: Run docker:
 ```
 sudo nvpmodel -m 1
 sudo xhost +si:localuser:root
