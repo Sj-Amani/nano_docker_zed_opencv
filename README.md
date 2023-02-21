@@ -11,6 +11,28 @@ Connect the ethernet cable and open a terminal:
 								Ref: https://forums.developer.nvidia.com/t/jetson-nano-blank-screen-during-and-after-boot/160356
 	sudo apt upgrade
 	sudo reboot
+```	
+	
+Install the USB WIFI (Buffalo 11ac):		from --> 	https://github.com/morrownr/8821au-20210708
+
+```
+connect the USB wifi to a USB port port on Jetson Nano
+	sudo apt install -y build-essential dkms git 
+	mkdir -p ~/app
+	cd app
+	git clone https://github.com/morrownr/8821au-20210708.git
+	cd 8821au-20210708
+	./ARM64_RPI.sh				[Although, this is meant for Rasberry Pi devices, it is an option that works in this case for a Jetson Nano.]
+						Ref: https://gist.github.com/TOTON95/b445509399a0d0314d2bc4079527f5a8
+						Note: If that not works, check this two links for modifications to fix:
+						https://forums.developer.nvidia.com/t/make-usb-wifi-dongle-rtl8812au-works-on-nano/74372/8
+						https://github.com/morrownr/8821au-20210708#step-9-run-a-script-to-reconfigure-for-arm-or-arm64-based-systems
+	
+	sudo ./install-driver.sh
+		Do you want to edit the driver options file now? [y/n] n
+		Do you want to reboot now? [y/n] y
+		if not reboot --> sudo reboot
+
 ```
 
 ## PART 3: Run docker:
