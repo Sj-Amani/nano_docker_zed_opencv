@@ -4,7 +4,7 @@ I am using this repo for my workshop attendees.
 Later, I will complete the instructions used here.
 
 ### Tip: 
-Just do the **PART 3: Run docker** on your Jetson's terminal to see the final results. Be careful to connect a `Stereolabs` camera with a depth feature before opening your terminal!
+Just do the **PART 2: Run docker** on your Jetson's terminal to see the final results. Be careful to connect a `Stereolabs` camera with a depth feature before opening your terminal!
 
 I tested on:
 * Jetson:  Nano and NX
@@ -27,7 +27,7 @@ Open the installed Google Chrome browser and go to **localhost:8080**. Type your
 
 ![Annotation_gif](videos/Annotation.gif)
 
-## PART 3: Run docker:
+## PART 2: Run docker:
 ```
 sudo xhost +si:localuser:root
 sudo docker run --gpus all -it --rm --net=host --runtime nvidia --privileged  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix sjamani/3.6-all-tools-withgtk-devel-l4t-r32.7:latest
