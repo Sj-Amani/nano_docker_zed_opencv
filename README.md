@@ -16,6 +16,7 @@ sudo docker exec -it cvat_server bash -ic 'python3 ~/manage.py createsuperuser'
 ```	
 Open the installed Google Chrome browser and go to **localhost:8080**. Type your login/password for the superuser on the login page and press the Login button. Now you should be able to create a new annotation task. Please read the [CVAT manual](https://opencv.github.io/cvat/docs/manual/) for more details.
 
+![Annotation_gif](videos/Annotation.gif)
 
 ## PART 3: Run docker:
 ```
