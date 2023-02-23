@@ -1,5 +1,14 @@
 # nano_docker_zed_opencv
-This repo has the docker file for build an image including ZED SDK and Opencv for Jetson Nano
+This repo has the docker file for building an image, including ZED SDK and Opencv for Jetson Nano.
+I am using this repo for my workshop attendees.
+Later, I will complete the instructions used here.
+
+### Tip: 
+Just do the **PART 3: Run docker** on your Jetson's terminal to see the final results. Be careful to connect a `Stereolabs` camera with a depth feature before opening your terminal!
+
+I tested on:
+* Jetson:  Nano and NX
+* Camera:  ZED2 and ZED min
 
 ## PART 1: Data Annotation via CVAT [Intel & OpenCV]:
 Connect to the internet and open a terminal:
