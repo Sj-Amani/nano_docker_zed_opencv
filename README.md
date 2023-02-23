@@ -36,4 +36,8 @@ unzip yolov5s_v6.0.wts.zip && rm yolov5s_v6.0.wts.zip
 ./build/yolov5_zed -s yolov5s.wts yolov5s.engine s
 ls		--> should see "yolov5s.engine"
 ./build/yolov5_zed -d yolov5s.engine ZED_input_option		--> END
+```	
+
+![AI_Detection_Result_gif](videos/AI_Detection_Result.gif)
+
 
