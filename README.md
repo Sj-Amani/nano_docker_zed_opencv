@@ -14,7 +14,7 @@ I tested on:
 Connect to the internet and open a terminal:
 ```
 sudo apt intall curl
-curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 git clone https://github.com/cvat-ai/cvat
 cd cvat
 sudo docker-compose up -d
